@@ -1,0 +1,11 @@
+.container {
+	margin-top: 50px;
+}
+.home-flex {
+	display: flex;
+}
+.home-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
