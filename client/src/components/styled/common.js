@@ -13,26 +13,15 @@ export const Card = styled.div`
 	border-radius: 10px;
 `;
 export const ProductCard = styled(Card)`
-	width: 250px;
-	height: 280px;
+	width: 220px;
+	height: 245px;
+	margin-bottom: 15px;
+	position: relative;
+	text-align: center;
 `;
 export const CatagoryCard = styled(Card)`
-	margin-left: 10px;
-	width: 220px;
-	height: 220px;
-	margin-bottom: 10px;
-	background-color: rgba(1, 2, 3, 1);
-`;
-export const HomeCardLeft = styled(Card)`
-	width: 56%;
-	height: 450px;
-`;
-export const HomeCardRight = styled(Card)`
-	background-color: red;
-	width: 44%;
-	height: 450px;
-`;
-export const Container = styled.div`
-	width: 94%;
-	margin-left: 3%;
+	width: 210px;
+	height: 210px;
+	cursor: pointer;
+	background-color: rgba(113, 222, 100, 0.4);
 `;

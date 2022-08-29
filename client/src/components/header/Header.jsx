@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { RiAccountPinCircleFill } from "react-icons/ri";
+import { FaShoppingCart } from "react-icons/fa";
 import "./header.css";
 function Header() {
 	const navRef = useRef();
@@ -12,7 +14,9 @@ function Header() {
 	return (
 		<>
 			<nav className="nav" ref={navRef}>
-				<div>LOGO</div>
+				<div className="logo">
+					<h1> Logo</h1>
+				</div>
 				<div className="nav-content">
 					<ul className="nav-links">
 						<Link to="/">
@@ -61,8 +65,15 @@ function Header() {
 						<li className="input">
 							<input type="search" placeholder="serach products.." />
 						</li>
-						<li className="icon">cart</li>
-						<li className="icon">user</li>
+						<li className="icon">
+							<span>
+								<FaShoppingCart />
+							</span>
+							<i>2</i>
+						</li>
+						<li className="uicon">
+							<RiAccountPinCircleFill />
+						</li>
 					</ul>
 					<div className="close-btn" onClick={() => menutoggle()}>
 						close
